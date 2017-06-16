@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--标题栏-->
+    <color name="common_title_bar_bg">#ffffff</color>
+    <color name="common_bottom_bar_bg">@color/alpha_94_white</color>
+    <color name="common_banner_bg">#fff5be</color>
+    <color name="common_banner_text_color">#ff9020</color>
+
+    <!--通用按压色-->
+    <color name="common_pressed">#F5F5F5</color>
+
+
+    <!--主色调／辅助色-->
+    <color name="common_main_1">#20a5f2</color>
+    <color name="common_main_2">#ff4d64</color>
+    <color name="common_main_3">#ff9020</color>
+
+
+    <!--文字颜色-->
+    <color name="common_text_1">#333333</color>
+    <color name="common_text_2">#657786</color>
+    <color name="common_text_3">#92a5b2</color>
+    <color name="common_text_4">#a3adb6</color>
+
+    <!--分割线/背景色-->
+    <color name="common_bg_1">#d6dade</color>
+    <color name="common_bg_2">#F5F5F5</color>
+    <color name="common_bg_3">#f3f4f8</color>
+    <color name="common_bg_4">#f9fafb</color>
+    <color name="common_bg_5">#d8d8d8</color>
+
+    <!-- 标准颜色-->
+    <color name="gray">#999999</color>
+
+    <color name="black">#000000</color>
+    <color name="alpha_90_black">#E5000000</color>
+    <color name="alpha_80_black">#CC000000</color>
+    <color name="alpha_70_black">#B2000000</color>
+    <color name="alpha_60_black">#99000000</color>
+    <color name="alpha_50_black">#80000000</color>
+    <color name="alpha_40_black">#5A000000</color>
+    <color name="alpha_30_black">#4D000000</color>
+    <color name="alpha_25_black">#40000000</color>
+    <color name="alpha_20_black">#33000000</color>
+    <color name="alpha_10_black">#19000000</color>
+    <color name="alpha_5_black">#0c000000</color>
+
+    <color name="white">#FFffffff</color>
+    <color name="alpha_94_white">#F0ffffff</color>
+    <color name="alpha_90_white">#E5ffffff</color>
+    <color name="alpha_80_white">#CCffffff</color>
+    <color name="alpha_70_white">#B2ffffff</color>
+    <color name="alpha_60_white">#99ffffff</color>
+    <color name="alpha_50_white">#80ffffff</color>
+    <color name="alpha_40_white">#5Affffff</color>
+    <color name="alpha_30_white">#4Cffffff</color>
+
+</resources>

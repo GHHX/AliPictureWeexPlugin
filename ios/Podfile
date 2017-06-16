@@ -1,0 +1,16 @@
+ali_source 'alibaba-specs'
+ali_source 'alibaba-specs-mirror'
+
+platform :ios, '7.0'
+#inhibit_all_warnings!
+
+def common
+	pod 'WeexSDK'
+	pod 'WeexPluginLoader'
+end
+
+target 'WeexPluginWheelPicker' do
+    common
+end
+
+

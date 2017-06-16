@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/show_date_picker_root_indexpicker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alpha_50_black"
+    android:layoutAnimation="@anim/anim_indexpicker"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bottom_container_rootview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:clickable="true"
+        >
+
+        <RelativeLayout
+            android:id="@+id/bottom_container_titlebar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            >
+
+            <TextView
+                android:id="@+id/bottom_container_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:text="取消"
+                android:textColor="@color/common_text_2"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/bottom_container_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:text="确定"
+                android:textColor="@color/common_main_1"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/bottom_container_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_toLeftOf="@id/bottom_container_ok"
+                android:layout_toRightOf="@id/bottom_container_cancel"
+                android:gravity="center"
+                android:textColor="@color/common_text_1"
+                android:textSize="17dp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider_indexpicker"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/bottom_container_titlebar"
+            android:background="@color/common_bg_1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="215dp"
+                android:orientation="horizontal"
+                android:paddingBottom="27dp"
+                android:paddingTop="25dp">
+
+                <org.weex.plugin.weexpluginwheelpicker.impl.wheelview.WheelView
+                    android:id="@+id/wheel_view_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:centerTextColor="@color/common_text_1"
+                    app:dividerTextColor="@color/common_bg_5"
+                    app:outerTextColor="@color/common_bg_1"
+                    app:textSize="18dp" />
+
+
+                <org.weex.plugin.weexpluginwheelpicker.impl.wheelview.WheelView
+                    android:id="@+id/wheel_view_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:centerTextColor="@color/common_text_1"
+                    app:dividerTextColor="@color/common_bg_5"
+                    app:outerTextColor="@color/common_bg_1"
+                    app:textSize="18dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="至"
+                android:textColor="@color/common_text_1"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

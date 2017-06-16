@@ -1,0 +1,169 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@4.0.5
+3 info using node@v7.4.0
+4 warn invalid config registry="npm"
+5 warn invalid config Must be a full url with 'http://'
+6 verbose publish [ '.' ]
+7 silly cache add args [ '.', null ]
+8 verbose cache add spec .
+9 silly cache add parsed spec Result {
+9 silly cache add   raw: '.',
+9 silly cache add   scope: null,
+9 silly cache add   escapedName: null,
+9 silly cache add   name: null,
+9 silly cache add   rawSpec: '.',
+9 silly cache add   spec: '/Users/fenghai/weex-plugin-wheel-picker',
+9 silly cache add   type: 'directory' }
+10 verbose addLocalDirectory /Users/fenghai/.npm/weex-plugin-wheel-picker/0.0.1/package.tgz not in flight; packing
+11 verbose correctMkdir /Users/fenghai/.npm correctMkdir not in flight; initializing
+12 info lifecycle weex-plugin-wheel-picker@0.0.1~prepublish: weex-plugin-wheel-picker@0.0.1
+13 silly lifecycle weex-plugin-wheel-picker@0.0.1~prepublish: no script for prepublish, continuing
+14 info lifecycle weex-plugin-wheel-picker@0.0.1~prepare: weex-plugin-wheel-picker@0.0.1
+15 silly lifecycle weex-plugin-wheel-picker@0.0.1~prepare: no script for prepare, continuing
+16 verbose tar pack [ '/Users/fenghai/.npm/weex-plugin-wheel-picker/0.0.1/package.tgz',
+16 verbose tar pack   '/Users/fenghai/weex-plugin-wheel-picker' ]
+17 verbose tarball /Users/fenghai/.npm/weex-plugin-wheel-picker/0.0.1/package.tgz
+18 verbose folder /Users/fenghai/weex-plugin-wheel-picker
+19 verbose addLocalTarball adding from inside cache /Users/fenghai/.npm/weex-plugin-wheel-picker/0.0.1/package.tgz
+20 verbose correctMkdir /Users/fenghai/.npm correctMkdir not in flight; initializing
+21 silly cache afterAdd weex-plugin-wheel-picker@0.0.1
+22 verbose afterAdd /Users/fenghai/.npm/weex-plugin-wheel-picker/0.0.1/package/package.json not in flight; writing
+23 verbose correctMkdir /Users/fenghai/.npm correctMkdir not in flight; initializing
+24 verbose afterAdd /Users/fenghai/.npm/weex-plugin-wheel-picker/0.0.1/package/package.json written
+25 silly publish { name: 'weex-plugin-wheel-picker',
+25 silly publish   version: '0.0.1',
+25 silly publish   main: './js/build/main.js',
+25 silly publish   description: 'weex-plugin-wheel-picker extend for weex',
+25 silly publish   license: 'Apache-2.0',
+25 silly publish   WeexSDKVersoin: '0.10.0',
+25 silly publish   '//': 'android工程安装配置',
+25 silly publish   ios:
+25 silly publish    { '//': '安装类型为pod',
+25 silly publish      type: 'pod',
+25 silly publish      name: 'WeexPluginWheelPicker',
+25 silly publish      version: '0.0.1' },
+25 silly publish   android:
+25 silly publish    { '//': '安装类型为maven',
+25 silly publish      type: 'maven',
+25 silly publish      groupId: 'org.weex.plugin',
+25 silly publish      name: 'weexpluginwheelpicker',
+25 silly publish      version: '0.0.1' },
+25 silly publish   keywords:
+25 silly publish    [ 'weex',
+25 silly publish      'hybrid',
+25 silly publish      'webcomponent',
+25 silly publish      'appframework',
+25 silly publish      'mvvm',
+25 silly publish      'javascript',
+25 silly publish      'webkit',
+25 silly publish      'v8',
+25 silly publish      'jscore',
+25 silly publish      'html5',
+25 silly publish      'android',
+25 silly publish      'ios',
+25 silly publish      'yunos' ],
+25 silly publish   engines: { node: '>=4' },
+25 silly publish   scripts:
+25 silly publish    { dev: 'webpack --watch --config build/webpack.config.js',
+25 silly publish      build: 'webpack --config build/webpack.config.js',
+25 silly publish      'dev:examples': 'webpack --watch --config build/webpack.examples.config.js',
+25 silly publish      'dev:examples:web': 'webpack --watch --config build/webpack.examples.web.config.js',
+25 silly publish      'build:examples': 'webpack --config build/webpack.examples.config.js',
+25 silly publish      'build:examples:web': 'webpack --config build/webpack.examples.web.config.js',
+25 silly publish      'copy:examples': 'rm -rf .examples/android/app/src/main/assets/* && cp -vrf ./examples/build/* ./android/app/src/main/assets/ &&rm -rf .examples/ios/bundlejs/* && cp -vrf ./examples/build/* .examples/ios/bundles/',
+25 silly publish      lint: 'eslint html5',
+25 silly publish      serve: 'serve ./ -p 12580' },
+25 silly publish   dependencies:
+25 silly publish    { animationjs: '^0.1.5',
+25 silly publish      'core-js': '^2.4.0',
+25 silly publish      cubicbezier: '^0.1.1',
+25 silly publish      envd: '^0.1.1',
+25 silly publish      httpurl: '^0.1.1',
+25 silly publish      lazyimg: '^0.1.5',
+25 silly publish      modals: '^0.1.6',
+25 silly publish      'query-string': '^4.2.3',
+25 silly publish      'scroll-to': '0.0.2',
+25 silly publish      semver: '^5.1.0',
+25 silly publish      'weex-components': '^0.2.0',
+25 silly publish      'weex-picker': '^0.1.0',
+25 silly publish      'weex-rax-framework': '0.0.10',
+25 silly publish      'weex-vue-framework': '2.1.8-weex.1' },
+25 silly publish   devDependencies:
+25 silly publish    { 'babel-core': '^6.17.0',
+25 silly publish      'babel-istanbul': '^0.11.0',
+25 silly publish      'babel-loader': '^6.2.5',
+25 silly publish      'babel-preset-es2015': '^6.16.0',
+25 silly publish      'babel-runtime': '^6.11.6',
+25 silly publish      'babel-eslint': '^7.1.1',
+25 silly publish      'cross-spawn': '^4.0.0',
+25 silly publish      eslint: '^2.11.1',
+25 silly publish      'http-server': '^0.9.0',
+25 silly publish      'json-loader': '^0.5.4',
+25 silly publish      reify: '^0.3.8',
+25 silly publish      rollup: '^0.36.0',
+25 silly publish      'rollup-plugin-buble': '^0.14.0',
+25 silly publish      'rollup-plugin-commonjs': '^5.0.4',
+25 silly publish      'rollup-plugin-eslint': '^3.0.0',
+25 silly publish      'rollup-plugin-json': '^2.0.2',
+25 silly publish      'rollup-plugin-node-resolve': '^2.0.0',
+25 silly publish      'rollup-plugin-postcss': '^0.2.0',
+25 silly publish      'rollup-plugin-replace': '^1.1.1',
+25 silly publish      'rollup-plugin-uglify': '^1.0.1',
+25 silly publish      'rollup-watch': '^2.5.0',
+25 silly publish      serve: '^1.4.0',
+25 silly publish      sinon: '^1.17.4',
+25 silly publish      'sinon-chai': '^2.8.0',
+25 silly publish      'uglify-js': '^2.6.4',
+25 silly publish      webpack: '^1.13.1',
+25 silly publish      'weex-loader': '^0.4.0',
+25 silly publish      'weex-vdom-tester': '^0.2.0',
+25 silly publish      'style-loader': '^0.13.1',
+25 silly publish      'vue-loader': '^10.3.0',
+25 silly publish      'css-loader': '^0.26.1',
+25 silly publish      vue: '^2.1.10',
+25 silly publish      'vue-template-compiler': '^2.1.10' },
+25 silly publish   weexpack: '0.4.0',
+25 silly publish   readme: '# weex-plugin-wheel-picker\nweex-plugin-wheel-picker是一个weex插件，可以通过weexpack快速集成，可以丰富weex功能\n\n支持的weexpack版本： >= 0.2.0\n支持的WeexSDK版本： >= 0.10.0\n\n# 功能\n\n# 快速使用\n- 通过weexpack初始化一个测试工程 weextest\n   ```\n   weexpack create weextest\n   ```\n- 添加ios平台\n  ```\n  weexpack platform add ios\n  ```\n- 添加android平台\n  ```\n  weexpack platform add android\n  ```\n- 添加插件\n  ```\n  weexpack plugin add weex-plugin-wheel-picker\n  ```\n# 项目地址\n[github](please add you source code address)\n\n# 已有工程集成\n## iOS集成插件WeexPluginWheelPicker\n- 命令行集成\n  ```\n  weexpack plugin add weex-plugin-wheel-picker\n  ```\n- 手动集成\n  在podfile 中添加\n  ```\n  pod \'WeexPluginWheelPicker\'\n  ```\n\n## 安卓集成插件weexpluginwheelpicker\n- 命令行集成\n  ```\n  weexpack plugin add weex-plugin-wheel-picker\n  ```\n- 手动集成\n  在相应工程的build.gradle文件的dependencies中添加\n  ```\n  compile \'${groupId}:weexpluginwheelpicker:{$version}\'\n  ``` \n  注意：您需要自行指定插件的groupId和version并将构建产物发布到相应的依赖管理仓库内去（例如maven）, 您也可以对插件的name进行自定义，默认将使用插件工程的名称作为name\n\n\n## 浏览器端集成 weex-plugin-wheel-picker\n- 命令行集成\n  ```\n  npm install  weex-plugin-wheel-picker\n  ```\n- 手动集成\n  在相应工程的package.json文件的dependencies中添加\n  ```\n  weex-plugin-wheel-picker:{$version}\'\n  ``` \n  \n',
+25 silly publish   readmeFilename: 'README.md',
+25 silly publish   gitHead: 'ac71e0d0c8c34ed8e8f3ce47ac2ffcdd26b06993',
+25 silly publish   _id: 'weex-plugin-wheel-picker@0.0.1',
+25 silly publish   _shasum: 'b531034c33912b7aa2a5f9c403004c64a9fb9485',
+25 silly publish   _from: '.' }
+26 info lifecycle weex-plugin-wheel-picker@0.0.1~prepublishOnly: weex-plugin-wheel-picker@0.0.1
+27 silly lifecycle weex-plugin-wheel-picker@0.0.1~prepublishOnly: no script for prepublishOnly, continuing
+28 verbose getPublishConfig undefined
+29 silly mapToRegistry name weex-plugin-wheel-picker
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry data Result {
+32 silly mapToRegistry   raw: 'weex-plugin-wheel-picker',
+32 silly mapToRegistry   scope: null,
+32 silly mapToRegistry   escapedName: 'weex-plugin-wheel-picker',
+32 silly mapToRegistry   name: 'weex-plugin-wheel-picker',
+32 silly mapToRegistry   rawSpec: '',
+32 silly mapToRegistry   spec: 'latest',
+32 silly mapToRegistry   type: 'tag' }
+33 silly mapToRegistry uri https://registry.npmjs.org/weex-plugin-wheel-picker
+34 verbose publish registryBase https://registry.npmjs.org/
+35 silly publish uploading /Users/fenghai/.npm/weex-plugin-wheel-picker/0.0.1/package.tgz
+36 verbose stack Error: auth required for publishing
+36 verbose stack     at CachingRegistryClient.publish (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+36 verbose stack     at /usr/local/lib/node_modules/npm/lib/publish.js:137:14
+36 verbose stack     at mapToRegistry (/usr/local/lib/node_modules/npm/lib/utils/map-to-registry.js:62:3)
+36 verbose stack     at publish_ (/usr/local/lib/node_modules/npm/lib/publish.js:108:3)
+36 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+36 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+36 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+36 verbose stack     at done (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:132:5)
+36 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:7:26)
+36 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+37 verbose cwd /Users/fenghai/weex-plugin-wheel-picker
+38 error Darwin 16.5.0
+39 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+40 error node v7.4.0
+41 error npm  v4.0.5
+42 error code ENEEDAUTH
+43 error need auth auth required for publishing
+44 error need auth You need to authorize this machine using `npm adduser`
+45 verbose exit [ 1, true ]
